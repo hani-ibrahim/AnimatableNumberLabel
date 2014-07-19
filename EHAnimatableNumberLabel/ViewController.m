@@ -26,26 +26,19 @@
     
     // Present the scene.
     [skView presentScene:scene];
+	
+	// Add Radius to buttons
+	for (UIButton *button in self.buttons) {
+		button.layer.cornerRadius = 10;
+		[self.view bringSubviewToFront:button];
+	}
 }
 
-- (BOOL)shouldAutorotate
+- (IBAction)buttonClicked:(UIButton *)sender
 {
-    return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+	SKView * skView = (SKView *)self.view;
+	MyScene *scene = (MyScene *)skView.scene;
+	[scene setScore:[[sender titleForState:UIControlStateNormal] intValue]];
 }
 
 @end

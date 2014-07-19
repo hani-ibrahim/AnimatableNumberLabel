@@ -17,13 +17,13 @@
 		37338B3E197A355D00E663AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37338B3C197A355D00E663AA /* Main.storyboard */; };
 		37338B41197A355D00E663AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37338B40197A355D00E663AA /* ViewController.m */; };
 		37338B44197A355D00E663AA /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 37338B43197A355D00E663AA /* MyScene.m */; };
-		37338B46197A355D00E663AA /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 37338B45197A355D00E663AA /* Spaceship.png */; };
 		37338B48197A355D00E663AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37338B47197A355D00E663AA /* Images.xcassets */; };
 		37338B4F197A355D00E663AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37338B4E197A355D00E663AA /* XCTest.framework */; };
 		37338B50197A355D00E663AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37338B28197A355D00E663AA /* Foundation.framework */; };
 		37338B51197A355D00E663AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37338B2C197A355D00E663AA /* UIKit.framework */; };
 		37338B59197A355D00E663AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37338B57197A355D00E663AA /* InfoPlist.strings */; };
 		37338B5B197A355D00E663AA /* EHAnimatableNumberLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37338B5A197A355D00E663AA /* EHAnimatableNumberLabelTests.m */; };
+		37338B6A197A407700E663AA /* EHAnimatableNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37338B69197A407700E663AA /* EHAnimatableNumberLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +53,14 @@
 		37338B40197A355D00E663AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		37338B42197A355D00E663AA /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		37338B43197A355D00E663AA /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		37338B45197A355D00E663AA /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		37338B47197A355D00E663AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37338B4D197A355D00E663AA /* EHAnimatableNumberLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EHAnimatableNumberLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37338B4E197A355D00E663AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		37338B56197A355D00E663AA /* EHAnimatableNumberLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EHAnimatableNumberLabelTests-Info.plist"; sourceTree = "<group>"; };
 		37338B58197A355D00E663AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37338B5A197A355D00E663AA /* EHAnimatableNumberLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHAnimatableNumberLabelTests.m; sourceTree = "<group>"; };
+		37338B68197A407700E663AA /* EHAnimatableNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAnimatableNumberLabel.h; sourceTree = "<group>"; };
+		37338B69197A407700E663AA /* EHAnimatableNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAnimatableNumberLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		37338B30197A355D00E663AA /* EHAnimatableNumberLabel */ = {
 			isa = PBXGroup;
 			children = (
+				37338B67197A407700E663AA /* Classes */,
 				37338B39197A355D00E663AA /* AppDelegate.h */,
 				37338B3A197A355D00E663AA /* AppDelegate.m */,
 				37338B3C197A355D00E663AA /* Main.storyboard */,
@@ -128,7 +130,6 @@
 				37338B40197A355D00E663AA /* ViewController.m */,
 				37338B42197A355D00E663AA /* MyScene.h */,
 				37338B43197A355D00E663AA /* MyScene.m */,
-				37338B45197A355D00E663AA /* Spaceship.png */,
 				37338B47197A355D00E663AA /* Images.xcassets */,
 				37338B31197A355D00E663AA /* Supporting Files */,
 			);
@@ -162,6 +163,15 @@
 				37338B57197A355D00E663AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37338B67197A407700E663AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37338B68197A407700E663AA /* EHAnimatableNumberLabel.h */,
+				37338B69197A407700E663AA /* EHAnimatableNumberLabel.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +252,6 @@
 			files = (
 				37338B35197A355D00E663AA /* InfoPlist.strings in Resources */,
 				37338B48197A355D00E663AA /* Images.xcassets in Resources */,
-				37338B46197A355D00E663AA /* Spaceship.png in Resources */,
 				37338B3E197A355D00E663AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 				37338B41197A355D00E663AA /* ViewController.m in Sources */,
 				37338B3B197A355D00E663AA /* AppDelegate.m in Sources */,
 				37338B37197A355D00E663AA /* main.m in Sources */,
+				37338B6A197A407700E663AA /* EHAnimatableNumberLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

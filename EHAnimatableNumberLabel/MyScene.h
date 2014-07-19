@@ -10,4 +10,6 @@
 
 @interface MyScene : SKScene
 
+- (void)setScore:(int)score;
+
 @end
